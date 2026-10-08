@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <h1> Black goese bistro | Pizza-on-Demand</h1>
+  <p>
+    our 12&quet; wood-fired are valiable for delivery
+  </p>
+
+  <form action="http://www.blackgoosebistro.com/pizza.php" method="post">
+    <fieldset>
+        <legend>Your Information</legend>
+        <p>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name">
+        </p>
+
+        <p>
+        <label for="address">Address</label>
+        <input type="text" name="address" id="address">
+        </p>
+
+        <p> 
+        <label for="phone">Phone</label>
+        <input type="tel" name="phone" id="phone">
+        </p>
+
+        <p>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email">
+        </p>
+
+        <p>
+            <label for="intructions">delivery intructions</label><br>
+            <textarea 
+             id="intructions"
+             name="intructions"
+             rows="4"
+             cols="50"
+             maxlength="400"
+             placeholder="no more than 400 characters."></textarea>
+        </p>
+    </fieldset>
+
+    <fieldset>
+        <legend>Desaign your dream pizza</legend>
+        <p>pizza specs</p>
+        <p>pilih 1:</p>
+
+        <p>
+            <!-- radio adalah input yang memungkinkan pengguna untuk memilih satu opsi dari beberapa -->
+            <input type="radio"  id="classic" name="crust" value="classic white" required>
+            <label for="classic">Classic White</label><br>
+
+            <input type="radio"  id="multigrain" name="crust" value="multigrain" required>
+            <label for="multigrain">Multigrain</label><br>
+
+            <input type="radio"  id="cheese" name="crust" value="cheese" required>
+            <label for="cheese">Chesse</label><br>
+
+            <input type="radio"  id="gluten" name="crust" value="gluten" required>
+            <label for="gluten">Gluten-Free</label><br>
+        </p>
+
+        <p>toppings</p>
+        <p>pilih 1 atau lebih:</p>
+        <p>
+            <!-- checkboxes adalah input yang memungkinkan pengguna untuk memilih satu atau lebih opsi
+             checked adalah atribut yang menandakan bahwa checkbox tersebut dicentang secara default -->
+            <input type="checkbox" id="pepperoni" name="toppings" value="pepperoni" checked>
+            <label for="pepperoni">Pepperoni</label><br>
+
+            <input type="checkbox" id="mushrooms" name="toppings" value="mushrooms" checked>
+            <label for="mushrooms">Mushrooms</label><br>
+
+            <input type="checkbox" id="onions" name="toppings" value="onions" checked>
+            <label for="onions">Onions</label><br>
+
+            <input type="checkbox" id="sausage" name="toppings" value="sausage" checked>
+            <label for="sausage">Sausage</label><br>
+
+            <input type="checkbox" id="bacon" name="toppings" value="bacon" checked>
+            <label for="bacon">Bacon</label><br>
+
+            <input type="checkbox" id="extra-cheese" name="toppings" value="extra-cheese" checked>
+            <label for="extra-cheese">Extra Cheese</label><br>
+
+            <input type="checkbox" id="black-olives" name="toppings" value="black-olives" checked>
+            <label for="black-olives">Black Olives</label><br>
+
+        </p>
+
+        <p>
+            <!-- quantity adalah input yang memungkinkan pengguna untuk memasukkan jumlah pesanan -->
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="10">
+        </p>
+    </fieldset>
+    <p>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </p>
+
+  </form>
+
+
+  
+</body>
+</html>
