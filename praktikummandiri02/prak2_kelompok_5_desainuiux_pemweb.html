@@ -1,0 +1,72 @@
+```html
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Pemesanan Barang</title>
+</head>
+<body>
+
+    <h2>Form Pemesanan Barang</h2>
+
+    <form action="hasil_pemesanan.html" method="get">
+
+        <fieldset>
+            <legend>Informasi Pembeli</legend>
+
+            <p>Nama:<br>
+                <input type="text" name="nama" required>
+            </p>
+
+            <p>Alamat:<br>
+                <textarea name="alamat" required></textarea>
+            </p>
+
+            <p>Nomor Telepon:<br>
+                <input type="tel" name="telepon" required>
+            </p>
+
+            <p>Email:<br>
+                <input type="email" name="email" required>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Detail Pemesanan</legend>
+
+            <p>Nama Barang:<br>
+                <select name="barang" required>
+                    <option value="">Pilih Barang</option>
+                    <option value="Laptop">Laptop</option>
+                    <option value="Keyboard">Keyboard</option>
+                    <option value="Mouse">Mouse</option>
+                    <option value="Headset">Headset</option>
+                </select>
+            </p>
+
+            <p>Metode Pembayaran:<br>
+                <input type="radio" name="pembayaran"
+                    value="Transfer Bank" required> Transfer Bank<br>
+                <input type="radio" name="pembayaran"
+                    value="COD"> COD
+            </p>
+
+            <p>Jumlah Barang:<br>
+                <input type="number" name="jumlah" min="1" required>
+            </p>
+
+            <p>Catatan:<br>
+                <textarea name="catatan"></textarea>
+            </p>
+        </fieldset>
+
+        <p>
+            <button type="submit">Pesan Sekarang</button>
+            <button type="reset">Reset</button>
+        </p>
+
+    </form>
+
+</body>
+</html>
+```
