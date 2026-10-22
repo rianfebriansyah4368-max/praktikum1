@@ -1,0 +1,392 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Profile - Rian</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 35px 15px;
+            font-family: Arial, sans-serif;
+            background: #eaf1f8;
+            color: #243449;
+            line-height: 1.6;
+        }
+
+        /* HEADER */
+        .profile {
+            max-width: 1000px;
+            margin: auto;
+            background: white;
+            border-radius: 14px;
+            overflow: hidden;
+            box-shadow: 0 8px 30px #183b5618;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            padding: 30px;
+            color: white;
+            background: linear-gradient(120deg, #16151a);
+        }
+
+        .profile-photo {
+            width: 190px;
+            height: 190px;
+            object-fit: cover;
+            border: 4px solid #32c6d8;
+            border-radius: 12px;
+        }
+
+        .identity {
+            flex: 1;
+            min-width: 0;
+        }
+
+        header h1 {
+            margin: 0 0 8px;
+            font-size: 30px;
+        }
+
+        header p {
+            margin: 4px 0;
+            color: #d6eaf5;
+        }
+
+        .categories {
+            min-width: 110px;
+            text-align: right;
+        }
+
+        .categories h3 {
+            color: #4ce0e5;
+            margin-top: 0;
+        }
+
+        .categories p {
+            font-size: 14px;
+        }
+
+        /* NAVIGASI */
+        nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 8px;
+            padding: 14px;
+            background: #163b59;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 7px;
+            font-weight: bold;
+            transition: 0.2s;
+        }
+
+        nav a:hover {
+            background: #25b8ca;
+            color: #10243a;
+        }
+
+        /* KONTEN UTAMA */
+        article {
+            padding: 30px;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #17496b;
+            margin-top: 0;
+            padding-bottom: 8px;
+            border-bottom: 3px solid #32c6d8;
+        }
+
+        /* BIODATA */
+        .biodata {
+            display: grid;
+            grid-template-columns: 140px 1fr;
+            gap: 8px 12px;
+            padding: 20px;
+            background: #f2f8fc;
+            border-radius: 10px;
+        }
+
+        .biodata p {
+            margin: 0;
+        }
+
+        .biodata strong {
+            color: #17496b;
+        }
+
+        /* DESKRIPSI */
+        .description {
+            padding: 5px 4px;
+        }
+
+        .description p {
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+
+        /* VIDEO, GALERI, DOWNLOAD */
+        .bottom {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1.1fr;
+            gap: 18px;
+            align-items: stretch;
+            margin-top: 40px;
+        }
+
+        .media-card {
+            min-width: 0;
+            padding: 16px;
+            background: #f4f8fc;
+            border: 1px solid #d8e5ef;
+            border-radius: 10px;
+        }
+
+        .media-card h3 {
+            margin: 0 0 14px;
+            color: #17496b;
+            font-size: 17px;
+        }
+
+        video {
+            display: block;
+            width: 100%;
+            border-radius: 7px;
+            background: #10243a;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+
+        .gallery img {
+            display: block;
+            width: 100%;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 7px;
+            border: 2px solid white;
+            box-shadow: 0 2px 6px #183b5620;
+        }
+
+        /* LINK DOWNLOAD */
+        .attachments a {
+            display: block;
+            margin-bottom: 10px;
+            padding: 9px 10px;
+            background: white;
+            border: 1px solid #d8e5ef;
+            border-radius: 6px;
+            color: #176c9b;
+            text-decoration: none;
+            font-size: 13px;
+            overflow-wrap: anywhere;
+        }
+
+        .attachments a:hover {
+            background: #dff7fa;
+            border-color: #25b8ca;
+        }
+
+        /* FOOTER */
+        footer {
+            padding: 20px;
+            text-align: center;
+            color: white;
+            background: #0a0b0c;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 750px) {
+            header {
+                flex-wrap: wrap;
+                padding: 22px;
+            }
+
+            .profile-photo {
+                width: 115px;
+                height: 115px;
+            }
+
+            .categories {
+                width: 100%;
+                text-align: left;
+            }
+
+            article {
+                padding: 20px;
+            }
+
+            .bottom {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery img {
+                height: 150px;
+            }
+        }
+
+        @media (max-width: 420px) {
+            .biodata {
+                grid-template-columns: 1fr;
+                gap: 3px;
+            }
+
+            .biodata p:nth-child(even) {
+                margin-bottom: 10px;
+            }
+
+            header h1 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="profile">
+
+    <!-- HEADER: Foto dan identitas -->
+    <header id="beranda">
+
+        <img class="profile-photo"
+             src="C:\xampp\htdocs\index.html\praktikummandiri03\foto\yans.jpeg"
+             alt="Foto profil Rian">
+
+        <div class="identity">
+            <h1>Faisal Febriansyah</h1>
+            <p>Nim    : 0110226019</p>
+            <p>Prodi  : Teknik Informatika</p>
+            <p>Kampus : STT Teradu Nurul Fikri</p>
+            <p>TTL    : Cirebon, 20 Februari 2006</p>
+            <p>Alamat : Rt003/Rw005 Ds.Susukan Tonggoh</p>
+            <p>         Kec.Susukan Lebak Kab.Cirebon</p>
+            <p>Email  : rianfebriansyah4368@gmail.com</p>
+            <p>Telepon: 083840840108</p>
+        </div>
+
+        <div class="categories">
+            <h3>Kategori</h3>
+            <p>Informatika</p>
+            <p>Pemrograman</p>
+            <p>Jaringan</p>
+            <p>Teknologi</p>
+        </div>
+
+    </header>
+
+
+
+    <!-- ARTICLE: Konten halaman profil -->
+    <article>
+
+       
+
+        <!-- SECTION: Dua paragraf deskripsi diri -->
+        <section class="description" id="tentang">
+            <h2>Tentang Saya</h2>
+
+            <p>
+                Saya adalah mahasiswa Teknik Informatika yang sedang
+                mempelajari dasar-dasar teknologi informasi, pemrograman,
+                sistem komputer, dan pengembangan website. Saya ingin
+                meningkatkan kemampuan dalam bidang teknologi melalui
+                pembelajaran dan praktikum selama perkuliahan.
+            </p>
+
+            <p>
+                Saya tertarik pada bidang Cyber Security, khususnya
+                keamanan sistem, jaringan komputer, dan perlindungan data.
+                Saya ingin mengembangkan pengetahuan dan keterampilan
+                secara bertahap agar dapat memahami cara menjaga keamanan
+                teknologi informasi.
+            </p>
+        </section>
+
+        <!-- SECTION: Konten multimedia -->
+        <section id="media" class="bottom">
+
+            <!-- VIDEO -->
+            <div class="media-card">
+                <h3>Video </h3>
+
+                <video controls>
+                    <source src="C:\xampp\htdocs\index.html\praktikummandiri03\vidio\vidio.mp4">
+                    
+                </video>
+
+                <p>Dj Enakeun</p>
+            </div>
+
+            <!-- ASIDE: Koleksi foto -->
+            <aside class="media-card">
+                <h3>Koleksi Foto</h3>
+
+                <div class="gallery">
+                    <img src="C:\xampp\htdocs\index.html\praktikummandiri03\foto\petik.jpeg" alt="Foto kegiatan 1">
+                    <img src="C:\xampp\htdocs\index.html\praktikummandiri03\foto\sma.jpeg" alt="Foto kegiatan 2">
+                    <img src="C:\xampp\htdocs\index.html\praktikummandiri03\foto\ybm.jpeg" alt="Foto kegiatan 3">
+                    <img src="C:\xampp\htdocs\index.html\praktikummandiri03\foto\rumah6.jpeg" alt="Foto kegiatan 4">
+                </div>
+            </aside>
+
+            <!-- DAFTAR DOWNLOAD -->
+            <div class="media-card attachments" id="download">
+                <h3>Attachments</h3>
+
+                <a href="C:\xampp\htdocs\index.html\praktikummandiri03\downloads\ijazah.pdf" download>
+                    📄 Download Ijazah 
+                </a>
+
+                <a href="C:\xampp\htdocs\index.html\praktikummandiri03\downloads\CV.pdf" download>
+                    📄 Download CV
+                </a>
+
+                <a href="C:\xampp\htdocs\index.html\praktikummandiri03\index.html" download>
+                    📄 Download File HTML praktikum3
+                </a>
+
+                <a href="C:\xampp\htdocs\index.html\praktikummandiri03\downloads\akte kelahiran .jpg" download>
+                    📄 Download Akta Kelahiran
+                </a>
+            </div>
+
+        </section>
+
+    </article>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Web Profile Rian | Teknik Informatika</p>
+    </footer>
+
+</div>
+
+</body>
+</html>
