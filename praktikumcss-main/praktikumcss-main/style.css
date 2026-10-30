@@ -1,0 +1,452 @@
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5dc;
+    color: #29251f;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+/* header dan judul */
+#header {
+    background-color: #e4bd87;
+    text-align: center;
+    padding: 15px 20px 10px;
+}
+
+#header h1 {
+    color: #30228c;
+    font-size: 25px;
+    margin: 0 0 12px;
+}
+
+/* Soekarno */
+blockquote {
+    background-color: #ffd900;
+    border: 1px solid #e5c300;
+    margin: 0;
+    padding: 10px;
+    font-size: 11px;
+    font-style: italic;
+}
+
+#soekarno {
+    display: block;
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+}
+
+/*  navigasi */
+body > div:nth-of-type(2) {
+    text-align: center;
+    padding: 10px;
+}
+
+body > div:nth-of-type(2) ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+body > div:nth-of-type(2) li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+body > div:nth-of-type(2) a {
+    color: #30228c;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/*Dua gambar utama */
+.gambar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 5px 15px 15px;
+}
+
+.gambar img {
+    width: 180px;
+    height: 200px;
+    max-width: 45%;
+    object-fit: cover;
+}
+
+/*  Bagian isi artikel */
+.isi {
+    padding: 0 15px;
+    text-align: justify;
+}
+
+.isi p {
+    margin: 8px 0;
+}
+
+.isi p:first-letter {
+    font-size: 28px;
+    color: #30228c;
+    float: left;
+    line-height: 1;
+    padding-right: 2px;
+}
+
+.jawa {
+    font-weight: bold;
+}
+
+/*  Bagian profil dan budidaya */
+#profil,
+#beternak {
+    padding: 0 15px;
+    scroll-margin-top: 10px;
+}
+
+#profil h3,
+#beternak h3 {
+    font-size: 16px;
+    margin: 8px 0;
+}
+
+#profil ul,
+#beternak ol {
+    padding-left: 25px;
+}
+
+#profil li,
+#beternak li {
+    margin-bottom: 8px;
+}
+
+#beternak h4 {
+    font-size: 13px;
+    margin: 8px 0;
+}
+
+#beternak p {
+    text-align: justify;
+    margin: 5px 0 12px;
+}
+
+/*  Galeri foto burung */
+.koleksi {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 15px;
+    padding: 20px 5%;
+}
+
+.koleksi img {
+    display: block;
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border: 4px solid white;
+    border-radius: 5px;
+    box-shadow: 0 1px 4px #aaa;
+}
+
+/*  Bagian promosi dan harga */
+.promo {
+    text-align: center;
+    padding: 10px 15px 30px;
+}
+
+.promo h2 {
+    font-size: 20px;
+    line-height: 1.4;
+    margin: 5px 0 15px;
+}
+
+.promo h3 {
+    font-size: 14px;
+    line-height: 1.8;
+    margin: 10px 0;
+}
+
+.promo del {
+    color: #b22222;
+}
+
+.promo strong {
+    color: #b22222;
+}
+
+#Wa {
+    color: #b22222;
+    font-weight: bold;
+}
+
+/*  Tombol marketplace */
+.promo ol {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.promo ol li {
+    display: inline-block;
+    margin: 3px;
+}
+
+.promo ol a {
+    display: inline-block;
+    background-color: #292929;
+    color: white;
+    text-decoration: none;
+    padding: 7px 12px;
+    border-radius: 6px;
+    font-size: 12px;
+}
+
+.promo ol a:hover {
+    background-color: #504b42;
+}
+
+/* . Penyesuaian tampilan HP */
+@media (max-width: 600px) {
+    #header h1 {
+        font-size: 20px;
+    }
+
+    blockquote {
+        font-size: 10px;
+    }
+
+    .gambar {
+        gap: 6px;
+    }
+
+    .gambar img {
+        width: 48%;
+        height: 140px;
+        max-width: none;
+    }
+
+    .isi {
+        padding: 0 10px;
+    }
+
+    #profil,
+    #beternak {
+        padding: 0 10px;
+    }
+
+    .koleksi {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+        padding: 15px;
+    }
+
+    .koleksi img {
+        height: 150px;
+    }
+
+    .promo h2 {
+        font-size: 17px;
+    }
+
+    .promo h3 {
+        font-size: 12px;
+    }
+}
+
+/*  PROFIL PERKUTUT  */
+#profil {
+    background-color: #ffffff;
+    margin: 20px 15px;
+    padding: 20px;
+    border-radius: 12px;
+    border-left: 6px solid #557c46;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+#profil h3 {
+    color: #355e32;
+    font-size: 20px;
+    border-bottom: 2px solid #e1eadb;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+#profil ul {
+    padding-left: 22px;
+}
+
+#profil li {
+    padding: 7px 0;
+    margin-bottom: 5px;
+}
+
+#profil li::marker {
+    color: #557c46;
+}
+
+/* =CARA BETERNAK  */
+#beternak {
+    margin: 20px 15px;
+    padding: 20px;
+    background-color: #e9f0e3;
+    border-radius: 12px;
+}
+
+#beternak h3 {
+    color: #355e32;
+    font-size: 20px;
+    margin-bottom: 18px;
+}
+
+#beternak ol {
+    padding-left: 25px;
+}
+
+#beternak ol > li {
+    background-color: #ffffff;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #d8e3d1;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+#beternak ol > li::marker {
+    color: #557c46;
+    font-weight: bold;
+}
+
+#beternak h4 {
+    color: #355e32;
+    font-size: 15px;
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+#beternak p {
+    line-height: 1.8;
+    margin-bottom: 0;
+}
+
+/*  GALERI BURUNG = */
+.koleksi {
+    background-color: #f0e8d7;
+    margin: 20px 15px;
+    padding: 20px;
+    border-radius: 12px;
+    gap: 15px;
+}
+
+.koleksi img {
+    border: 4px solid #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.koleksi img:hover {
+    transform: translateY(-5px);
+}
+
+/* KARTU PROMOSI */
+.promo {
+    background-color: #ffffff;
+    border: 2px solid #d9e5ce;
+    border-radius: 16px;
+    margin: 20px auto 35px;
+    padding: 25px 20px;
+    max-width: 650px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.promo h2 {
+    color: #355e32;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.promo h3 {
+    background-color: #f0f5eb;
+    border-radius: 10px;
+    padding: 15px;
+    line-height: 2;
+}
+
+.promo del {
+    color: #999999;
+}
+
+.promo strong {
+    color: #d34b37;
+    font-size: 20px;
+}
+
+#Wa {
+    color: #355e32;
+    font-weight: bold;
+}
+
+.promo h4 {
+    color: #355e32;
+    margin-top: 20px;
+}
+
+.promo ol a {
+    background-color: #355e32;
+    padding: 9px 14px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.promo ol a:hover {
+    background-color: #6b8f5e;
+}
+
+/*  TAMPILAN HP  */
+@media (max-width: 600px) {
+    #profil,
+    #beternak {
+        margin: 15px 10px;
+        padding: 15px;
+    }
+
+    #profil h3,
+    #beternak h3 {
+        font-size: 18px;
+    }
+
+    #beternak ol > li {
+        padding: 12px;
+    }
+
+    .koleksi {
+        margin: 15px 10px;
+        padding: 12px;
+    }
+
+    .koleksi img {
+        height: 130px;
+    }
+
+    .promo {
+        margin: 15px 10px 25px;
+        padding: 18px 12px;
+    }
+
+    .promo h2 {
+        font-size: 18px;
+    }
+
+    .promo h3 {
+        padding: 10px;
+    }
+}
