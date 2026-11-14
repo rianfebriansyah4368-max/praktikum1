@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Times New Roman", serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header, footer {
+    background-color: #f4df79;
+    padding: 20px;
+    height: 80px;
+}
+
+.main-container {
+    display: flex;
+    flex: 1; /* Mengisi sisa tinggi layar */
+}
+
+article {
+    background-color: #ffffff;
+    flex: 3; /* Lebar 3 bagian */
+    padding: 20px;
+}
+
+aside {
+    background-color: #f4b7c2;
+    flex: 1; /* Lebar 1 bagian */
+    padding: 20px;
+}
+
+nav {
+    background-color: #00d1c1;
+    flex: 1; /* Lebar 1 bagian */
+    padding: 20px;
+}
