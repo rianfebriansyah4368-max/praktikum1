@@ -45,13 +45,14 @@ article {
     padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end; /* Mendorong konten ke bawah */
+    justify-content: flex-end; 
     gap: 15px;
 }
 
 .article-title {
     text-align: center;
     font-weight: bold;
+
 }
 
 .image-row {
@@ -62,9 +63,17 @@ article {
 .img-box {
     background-color: #cccccc;
     flex: 1;
-    height: 130px;
+    height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: bold;
+    overflow: hidden;
+}
+
+.img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    display: block;
 }

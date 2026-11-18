@@ -17,7 +17,6 @@ body {
     margin: auto;
 }
 
-/* 3 Kotak di baris atas */
 .box-atas {
     flex: 1 1 calc(33.33% - 10px);
     height: 100px;
@@ -29,7 +28,6 @@ body {
     justify-content: center;
 }
 
-/* 5 Kotak di baris bawah */
 .box-bawah {
     flex: 1 1 calc(20% - 10px);
     height: 100px;

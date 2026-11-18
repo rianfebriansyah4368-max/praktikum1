@@ -19,23 +19,23 @@ header, footer {
 
 .main-container {
     display: flex;
-    flex: 1; /* Mengisi sisa tinggi layar */
+    flex: 1;
 }
 
 article {
     background-color: #ffffff;
-    flex: 3; /* Lebar 3 bagian */
+    flex: 3;
     padding: 20px;
 }
 
 aside {
     background-color: #f4b7c2;
-    flex: 1; /* Lebar 1 bagian */
+    flex: 1;
     padding: 20px;
 }
 
 nav {
     background-color: #00d1c1;
-    flex: 1; /* Lebar 1 bagian */
+    flex: 1;
     padding: 20px;
 }

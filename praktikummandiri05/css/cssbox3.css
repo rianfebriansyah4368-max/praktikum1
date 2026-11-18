@@ -7,14 +7,13 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* Pembungkus baris untuk elemen sejajar */
+
 .row {
     width: 100%;
     margin-bottom: 15px;
     overflow: hidden;
 }
 
-/* Baris 1: Kuning (kiri) & Oranye (kanan) */
 .top-kuning {
     float: left;
     width: 19%;
@@ -31,7 +30,6 @@ body {
     border: 1px solid black;
 }
 
-/* Baris 2: Hijau (kiri), Abu-abu (tengah), Biru Muda (kanan) */
 .mid-hijau {
     float: left;
     width: 19%;
@@ -57,7 +55,6 @@ body {
     border: 1px solid black;
 }
 
-/* Baris 3: Biru Tua (bawah penuh) */
 .footer-biru-tua {
     width: 100%;
     height: 65px;
